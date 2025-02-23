@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>一键官话——国企级语言规范转换平台</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-background">
+            <div class="slide-container">
+                <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f" alt="" class="slide">
+                <img src="https://images.unsplash.com/photo-1582897085656-c636d006a246" alt="" class="slide">
+                <img src="https://images.unsplash.com/photo-1577017040065-650ee4d43339" alt="" class="slide">
+                <img src="https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a" alt="" class="slide">
+            </div>
+        </div>
+        <h1 class="main-title">一键官话——国企级语言规范转换平台</h1>
+        <p class="sub-title">快速生成官方宣发语言，精准传递国企声音</p>
+    </header>
+
+    <main class="main-content">
+        <section class="input-section">
+            <h2 class="input-title">请输入需要转换的口语化内容（建议50-200字）</h2>
+            <div class="input-container">
+                <textarea id="inputText" placeholder="请输入内容..."></textarea>
+                <span class="word-count">已输入：0字</span>
+                <div class="mode-switch">
+                    <label class="switch">
+                        <input type="checkbox" id="useDeepseek">
+                        <span class="slider round"></span>
+                    </label>
+                    <span class="switch-label">调用Deepseek</span>
+                </div>
+            </div>
+            <button class="generate-btn">立即生成官方语言</button>
+        </section>
+
+        <section class="output-section">
+            <h2 class="output-title">
+                <i class="fas fa-file-alt"></i>
+                为您生成以下5种官方表述（点击复制使用） ▼
+            </h2>
+            <div class="results-container">
+                <!-- 结果卡片将通过JS动态生成 -->
+            </div>
+        </section>
+
+        <section class="templates-section">
+            <div class="templates-container">
+                <div class="template-box openings">
+                    <h3>政策文件开头范例 <span class="tag">滚动展示中</span></h3>
+                    <div class="template-content"></div>
+                </div>
+                <div class="template-box endings">
+                    <h3>政策文件结尾范例 <span class="tag">滚动展示中</span></h3>
+                    <div class="template-content"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="examples-section">
+            <h2>参考示例</h2>
+            <div class="example-slider">
+                <div class="example-card">
+                    <div class="original">
+                        <h3>原文</h3>
+                        <p>我们今年要招很多人，岗位很多！</p>
+                    </div>
+                    <div class="converted">
+                        <h3>转换后</h3>
+                        <p>2024年度计划面向社会公开招聘多元化岗位，全面扩容人才储备</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="company-logo"></div>
+        <p class="copyright">ADAMJ版权所有，仅供自用</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html> 
